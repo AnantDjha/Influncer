@@ -1,0 +1,253 @@
+
+.main-signup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+}
+.form{
+    width: 100%;
+    height: 92%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* overflow-y: auto; */
+
+    
+}
+.floater{
+    width: 100vw;
+    height: 8%;
+    background-color: transparent;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.floater a{
+    font-size: 30px;
+    color: rgb(210, 56, 56);
+    color: rgb(239, 82, 10);
+    padding: 0 0.3rem;
+   /* border-top: 2px solid white; */
+   border: 2px solid rgb(255, 60, 0);
+   border-radius: 50%;
+   margin-bottom: 0.4rem;
+   display: flex;align-items: center;
+
+}
+.forInfluncer{
+    width: 60rem;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* height: fit-content; */
+}
+.influnceImg{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+   
+}
+.influnceImg img{
+    width: 100%;
+    height: 90%;
+}
+.forInfluncer form{
+    border: 2px solid black;
+    background-color: #fff;
+    /* width: 80%; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+}
+
+.fields{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: blue; */
+    /* overflow-y: scroll; */
+}
+.input ,.inputNameOuter{
+    width: 100%;
+    margin: 0.7rem 0;
+}
+.input input{
+    width: 100%;
+}
+.inputNameOuter{
+    display: flex;
+    justify-content: space-between;
+}
+.inputName{
+    width: 47%;
+    
+}
+.inputName input,.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.2rem 0.1rem;
+    border-bottom: 1px solid blueviolet;
+    font-size: 17px;
+}
+p{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.textArea{
+    width: 100%;
+    
+}
+.textArea textarea{
+    width: 100%;
+    padding: 0.3rem 0.1rem;
+    border:1px solid blueviolet;
+    outline: none;
+    margin-top: 0.3rem;
+    height: 4rem;
+}
+.dropInput{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.dropInput select{
+    width: 100%;
+    padding: 0.3rem 0;
+    margin-top: 0.3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blueviolet;
+
+}
+.submitBtn{
+    width: 80%;
+    padding: 0.6rem 0.1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(150, 8, 210);
+    color: white;
+    border-radius: 10px;
+    margin:0.5rem 0;
+    cursor: pointer;
+}
+span{
+    font-size: 12px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+.formChanger{
+margin-bottom: 3rem;
+}
+.formChanger button{
+    padding: 0.5rem 0;
+    width: 12rem;
+    margin:0 .1rem;
+    border: none;
+    outline: none;
+    border: 2px solid orange;
+    background-color: transparent;
+    color: orange;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.formChanger button:enabled:hover{
+    transform: scale(1.02);
+    border-radius: 0;
+    /* border :2px solid rgb(168, 127, 51); */
+}
+.formChanger button:disabled{
+    cursor: not-allowed;
+}
+.firstBtn{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.secondBtn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width:1030px)
+{
+    .forInfluncer{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:689px)
+{
+    input{
+        background-color: transparent;
+    }
+    .forInfluncer form{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+        padding: 1rem 0;
+
+    }
+    .influnceImg{
+        display: none;
+
+    }
+    .forInfluncer{
+        position: relative;
+        /* background-color: red; */
+    }
+    .forInfluncer form{
+        height: 93%;
+    }
+    .forInfluncer::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(../assets/influncerImg.png) no-repeat;
+        background-position: center;
+        background-size: 45%;
+        position: absolute;
+        /* z-index: -1; */
+        opacity: 0.5;
+        top: 0;
+    }
+    .forBrand::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(../assets/brandImg.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        /* z-index: -1; */
+        opacity: 0.5;
+        top: 0;
+    }
+    .dropInput select{
+        background-color: transparent;
+
+    }
+    textarea{
+        background-color: transparent;
+    }
+    .formChanger button{
+        width: 10rem;
+    }
+}
+

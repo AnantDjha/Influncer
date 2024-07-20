@@ -1,0 +1,54 @@
+.main-brand{
+    width: 100vw;
+    background-color: #fff;
+    margin: 3rem 0;
+}
+
+.brands{
+    width: 79rem;
+    margin: auto;
+}
+.branfImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.branfImage img{
+    width: 16%;
+}
+.brands h2{
+    margin: 2rem 0;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@media only screen and (max-width:1300px)
+{
+    .brands{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:800px)
+{
+   .branfImage{
+    flex-wrap: wrap;
+   }
+    .branfImage img{
+        width: 23%;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width:630px)
+{
+    .brands h2{
+        font-size: 19px;
+    }
+    
+        .branfImage img{
+            width: 30%;
+        }
+}

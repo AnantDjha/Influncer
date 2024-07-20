@@ -1,0 +1,82 @@
+.main-about{
+    width: 100vw;
+    /* height: 100vw; */
+    background-color: #fff;
+    margin: 3rem 0;
+    padding: 2rem 0;
+}
+.aboutFlunce{
+    width: 79rem;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    /* border: 2px solid black; */
+    padding: 3rem 0;
+    border-radius: 10px;
+    background-color: #eec3cd;
+}
+.aboutFlunce-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+    /* height: 100%; */
+    
+}
+.aboutFlunce-img{
+    width: 47%;
+    /* height: 100%; */
+}
+.aboutFlunce-img img{
+    width: 100%;
+    border-radius: 10rem;
+}
+.aboutFlunce-text h2{
+    margin: 2rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.aboutFlunce-text p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1300px)
+{
+    .aboutFlunce{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:1050px)
+{
+    .aboutFlunce{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .aboutFlunce-text{
+        width: 70%;
+    }
+    .aboutFlunce-img{
+        width: 70%;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width:630px)
+{
+    .aboutFlunce-text{
+        width: 90%;
+    }
+    .aboutFlunce-img{
+        width: 90%;
+    }
+    .aboutFlunce-text p{
+        font-size: 13px;
+    }
+}
+
+

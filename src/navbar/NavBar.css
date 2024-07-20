@@ -1,0 +1,127 @@
+.main-nav{
+    width: 100vw;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+}
+.main-nav nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    position: relative;
+    background-color: #d5d3d3;
+}
+
+.brand-name{
+    margin-left: 2rem;
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.main-nav nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.main-nav nav ul a{
+    text-decoration: none;
+    margin: 0 1rem;
+}
+.main-nav nav ul a li{
+    list-style: none;
+    /* color: blueviolet; */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.main-nav nav ul a:hover{
+    color: blueviolet;
+}
+.one li{
+    color: black;
+}
+.one li:hover{
+    color: blueviolet;
+}
+.two li{
+    color: black;
+}
+.two li:hover{
+    color: blueviolet;
+}
+
+.signupButton{
+    border: 2px solid #EE426E;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    /* color: blueviolet; */
+}
+.signupButton li{
+       color: #EE426E;
+    
+
+}
+.signupButton:hover{
+    border-radius: 0;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width:650px)
+{
+    .main-nav nav ul{
+        position: absolute;
+        transform: rotate(90deg);
+        top: 18rem;
+        right: -8rem;
+        /* border: 1px solid blueviolet; */
+        padding: 0.4rem 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .main-nav nav ul a{
+        border: 1px solid black;
+        margin: 0 0.1rem;
+        padding: 0.3rem 1rem;
+        /* background-color: #fff; */
+    }
+    .main-nav nav ul a li{
+        color: black;
+        font-size: 14px;
+    }
+    .signupButton{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        color: black;
+    }
+    .one{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .signupButton{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid black;
+        margin: 0 0.1rem;
+        padding: 0.3rem 1rem;
+        background-color: transparent;
+        background-color: black;
+    }
+    .signupButton li{
+        color: white;
+        list-style: none;
+
+    }
+    .brand-name{
+        font-size: 15px;
+    }
+}
