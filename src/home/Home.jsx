@@ -49,7 +49,7 @@ export default function Home() {
                     
                     <div className="collaborateWithInfluencer-text">
                     <h2>Find best Influncers to Collaborate</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae sit eligendi similique exercitationem ratione nisi!</p>
+                    <p>Discover and Connect with Top Influencers: Elevate Your Brand with Premier Collaboration Opportunities</p>
                     <button onClick={()=>{
                         navigate("/signup")
                     }}>Lets Start</button>
