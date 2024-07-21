@@ -1,0 +1,36 @@
+.main-footer{
+    width: 100vw;
+    background-color:#DDDDDD;
+    
+}
+.uper{
+    width: 100%;
+    padding: 2rem 0;
+}
+.uper h3{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.uper h3 span a{
+    margin: 0 1rem;
+    /* border-radius: 50%; */
+}
+.uper h3 span a img{
+    border-radius: 50%;
+
+}
+.down{
+    padding: 1rem 0;
+    border-top: 1px solid black;
+}
+.down p{
+    width: fit-content;
+    margin: auto;
+}
